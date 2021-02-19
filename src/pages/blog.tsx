@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { GetStaticProps } from 'next';
-import Layout from '../../shared/components/layout';
-import { getAllPosts } from '../../lib/blog';
-import { Post } from '../../interfaces/post';
-import ArticlePreview from '../../scenes/blog/article-preview';
+import Layout from '../shared/components/layout';
+import { getAllPosts } from '../lib/blog';
+import { Post } from '../interfaces/post';
+import ArticlePreview from '../scenes/blog/article-preview';
 
 const BlogPage: FC<{ posts: Post[] }> = ({ posts }) => {
   return (
