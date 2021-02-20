@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationItem from './navigation-item';
 
-const NavigationContainer = () => {
+const Navigation = () => {
   return (
     <ul>
       <NavigationItem name="Home Page" route={'/'} icon={`Home`} />
@@ -21,4 +21,4 @@ const NavigationContainer = () => {
   );
 };
 
-export default NavigationContainer;
+export default Navigation;
