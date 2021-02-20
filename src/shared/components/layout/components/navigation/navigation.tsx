@@ -1,21 +1,28 @@
 import React from 'react';
 import NavigationItem from './navigation-item';
+import {
+  faHome,
+  faBookOpen,
+  faFont,
+  faCreditCard,
+  faCashRegister,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = () => {
   return (
     <ul>
-      <NavigationItem name="Home Page" route={'/'} icon={`Home`} />
-      <NavigationItem name="Blog" route={'/blog'} icon={`BookOpen`} />
-      <NavigationItem name="Glossary" route={'/glossary'} icon={`Type`} />
+      <NavigationItem name="Home Page" route={'/'} icon={faHome} />
+      <NavigationItem name="Blog" route={'/blog'} icon={faBookOpen} />
+      <NavigationItem name="Glossary" route={'/glossary'} icon={faFont} />
       <NavigationItem
         name="Getting Started"
         route={'/getting-started'}
-        icon={`CreditCard`}
+        icon={faCreditCard}
       />
       <NavigationItem
         name="Playground"
         route={'/playground'}
-        icon={`TrendingUp`}
+        icon={faCashRegister}
       />
     </ul>
   );
